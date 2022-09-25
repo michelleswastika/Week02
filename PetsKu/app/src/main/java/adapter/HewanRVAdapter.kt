@@ -33,7 +33,7 @@ class HewanRVAdapter (val ListDataHewan: ArrayList<Hewan>, val cardListener: Car
         val viewBind = CardAnimalBinding.bind(itemView)
 
         fun setData(hewan: Hewan, position: Int) {
-            viewBind.CardNamaHewan.text = hewan.idHewan.toString()
+            viewBind.CardNamaHewan.text = hewan.NamaHewan
             viewBind.CardJenisHewan.text = hewan.JenisHewan
             viewBind.CardUmurHewan.text = hewan.umurHewan.toString()+" tahun"
             viewBind.CardButtonEdit.setOnClickListener {
